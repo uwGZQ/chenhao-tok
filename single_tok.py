@@ -137,9 +137,9 @@ if __name__ == "__main__":
     )
     parser.add_argument("--video_folder", type=str, default="/weka/jieyuz/ziqigao/iccv_chenhao/activitynet_videos",
                         help="A folder with video files")
-    parser.add_argument("--save_traj_folder", type=str, default="/weka/jieyuz/ziqigao/iccv_chenhao/activitynet_videos_traj",
+    parser.add_argument("--save_traj_folder", type=str, default="/results/activitynet_videos_traj",
                         help="A folder with video files")
-    parser.add_argument("--save_feat_folder", type=str, default="/weka/jieyuz/ziqigao/iccv_chenhao/activitynet_videos_feat_vittok",
+    parser.add_argument("--save_feat_folder", type=str, default="/results/activitynet_videos_feat_vittok",
                         help="A folder with video files")
 
     parser.add_argument("--ckpt_path", type=str, default='/weka/jieyuz/ziqigao/iccv_chenhao/vittok_ckpts/ckpt_24.pth',
