@@ -168,7 +168,7 @@ if __name__ == "__main__":
 
     ######################## First step: pre-generate all the trajectories and save them to disk #################################
     trajGenModel = TrajGenPipeline(
-        sam2_checkpoint="../videotok/generate_graph/segment_anything_2/checkpoints/sam2_hiera_small.pt",
+        sam2_checkpoint="/weka/jieyuz/ziqigao/iccv_chenhao/videotok/generate_graph/segment_anything_2/checkpoints/sam2_hiera_small.pt",
         image_size=traj_gen_resolution,
         frame_num=num_frames,
         track_image_size=traj_gen_resolution,
