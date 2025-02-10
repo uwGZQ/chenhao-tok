@@ -19,7 +19,7 @@ import pickle
 
 sys.path.append("/weka/jieyuz/ziqigao/iccv_chenhao/videotok/generate_graph/segment_anything_2")
 sys.path.append("/weka/jieyuz/ziqigao/iccv_chenhao/videotok/entry")
-
+sys.path.append("/weka/jieyuz/ziqigao/iccv_chenhao/videotok")
 from videotok.generate_graph.segment_anything_2.pipeline import TrajGenPipeline
 from videotok.entry.share_models.traj_transformer import VideoTokenViT
 from videotok.entry.share_models.vit3d import ViT3D
