@@ -19,8 +19,7 @@ import pickle
 
 sys.path.append("/weka/jieyuz/ziqigao/iccv_chenhao/videotok/generate_graph/segment_anything_2")
 sys.path.append("/weka/jieyuz/ziqigao/iccv_chenhao/videotok/entry")
-sys.path.append("/weka/jieyuz/ziqigao/iccv_chenhao/videotok")
-sys.path.append("/weka/jieyuz/ziqigao/iccv_chenhao")
+
 from videotok.generate_graph.segment_anything_2.pipeline import TrajGenPipeline
 from videotok.entry.share_models.traj_transformer import VideoTokenViT
 from videotok.entry.share_models.vit3d import ViT3D
@@ -138,12 +137,12 @@ if __name__ == "__main__":
     )
     parser.add_argument("--video_folder", type=str, default="/weka/jieyuz/ziqigao/iccv_chenhao/activitynet_videos",
                         help="A folder with video files")
-    parser.add_argument("--save_traj_folder", type=str, default="/results/activitynet_videos_traj",
+    parser.add_argument("--save_traj_folder", type=str, default="/mnt/sda1/video/activitynet_videos_traj",
                         help="A folder with video files")
-    parser.add_argument("--save_feat_folder", type=str, default="/results/activitynet_videos_feat_vittok",
+    parser.add_argument("--save_feat_folder", type=str, default="/mnt/sda1/video/activitynet_videos_feat_vittok",
                         help="A folder with video files")
 
-    parser.add_argument("--ckpt_path", type=str, default='/weka/jieyuz/ziqigao/iccv_chenhao/vittok_ckpts/ckpt_24.pth',
+    parser.add_argument("--ckpt_path", type=str, default='/mnt/sdd1/dynabench/video/Video-ChatGPT/model/vit3d.pth',
                         help="path to model checkpoint")
     parser.add_argument("--model", type=str, choices=["vittok", "vit3d"], default='vittok',
                         help="Select which method to use")
